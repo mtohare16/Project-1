@@ -27,6 +27,7 @@ h1{
 .scoreBoard {
   text-align: center;
   padding: 25px;
+  display: flex;
  }
  .player{
   display: inline-block;
@@ -37,6 +38,7 @@ h1{
   border: 1px solid black;
   padding: 30px;
   color: lightyellow;
+  table-layout: fixed;
 }
 
 p.directions {
