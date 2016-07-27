@@ -6,6 +6,9 @@ h1{
   margin: 10px;
   font-style: italic;
 }
+h3{
+  padding-right: 2em;
+}
 
 .top {
   text-align: center;
@@ -28,7 +31,7 @@ h1{
   text-align: center;
   padding: 25px;
   display: flex;
-  justify-position: space-around;
+  justify-content: center;
  }
  .player{
   display: inline-block;

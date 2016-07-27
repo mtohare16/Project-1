@@ -11,6 +11,7 @@ if (n % 2 === 0 ) {
   console.log("even")
 };
 */
+
 var gameArea = {
   canvas : document.createElement("canvas"),
   start : function() {
