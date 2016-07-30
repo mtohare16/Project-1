@@ -37,6 +37,7 @@ h1{
   border: 1px solid black;
   padding: 30px;
   color: lightyellow;
+  border-radius: 25%;
 }
 
 p.directions {
