@@ -89,7 +89,7 @@ button:focus {
 button:hover {
   background-color: #E2E2E8;
 }
-button#restart:hover {
+button.restart:hover {
   background-color: #FF5C54;
 }
 /*.circle:after {
