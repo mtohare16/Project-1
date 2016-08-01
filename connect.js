@@ -1,17 +1,24 @@
 
 document.addEventListener("click", function(evnt) {
-  console.log(evnt.target);
+  console.log(evnt.target.className);
   //reset?
 
-document.getElementById('c1').style.backgroundColor = 'red';
-//document.getElementById('c2').style.backgroundColor = 'red';
+var target = evnt.target.className;
+document.getElementsByClassName(evnt.target.className).style.backgroundColor;
 
-  //get a column
-  var eventTarget = evnt.target;
-  var classes = eventTarget.classList; //['c7']
-  var col = classes[0]
+  //var black = document.getElementById(evnt.target.id).style.backgroundColor = 'black';
+var eventTarget = evnt.className;
 
-  console.log(col);
+
+//var elements = document.getElementByTagName('*');
+
+for(var i=0 ; i<elements.length ; i++){
+  elements[i].addEventListener('click', red, false);
+}
+
+
+
+  //this.//get the function to work with buttons
   //var piece = col[0]
 
   //place a piece in the column
@@ -20,13 +27,40 @@ document.getElementById('c1').style.backgroundColor = 'red';
 });
 
 
-var count=1;
+
+
+
+/*create two players for the game,
+player 1 will be red circles, and player 2 will be black circles*/
+/*var game = {
+  table: null,
+  $statusMessage: null,
+  currentPlayer = 'X',
+
+  togglePlayer: function() {
+    this.currentPlayer =
+    (this.currentPlayer === 'X' ? 'O' : 'X');
+  },
+}
+showWinner: function() {
+  this.$statusMessage.text('Player ' + this.currentPlayer + ' has won!');
+},
+showDraw: function() {
+  this.$statusMessage.text('Draw');
+},*/
+
+
+
+
+
+
+/*var count=1;
 function setColor(btn, color) {
   var property = document.getElementById('c1')(button);
   if (count === 0) {
     property.style.backgroundColor = "#FF0000"
   }
-}
+}*/
 //if cd[x][i]
   //ig i |= 0
 //function placePiece()
