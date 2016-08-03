@@ -9,6 +9,7 @@ For Project 1 I am working on creating a connect four game. The objective of the
 - HTML
 - CSS
 - JavaScript
+- jQuery
 - Trello - user stories - https://trello.com/b/AWM71ZJd/project-1-connect-four
 - Mockingbird - wireframe
 - Sublime Text 3 - text editor
