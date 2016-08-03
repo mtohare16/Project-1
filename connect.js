@@ -11,8 +11,8 @@ document.addEventListener("click", function(evnt) {
   //console.log(bottom);
   //var red = bottom.style.backgroundColor = 'red';
 
-  var remove = document.getElementsByClassName("empty").className.replace("empty","full");
-  console.log(remove);
+  //var remove = document.getElementsByClassName("empty").className.replace("empty","full");
+  //console.log(remove);
   /*if (document.getElementById("btn").className -= "empty" === 0) {
     red;
   } else{
@@ -58,23 +58,34 @@ document.addEventListener("click", function(evnt) {
 for (var r = 6; r > 0; r--) {
 
   var rowClass = "r" + r;
-  console.log(rowClass);
+  //console.log(rowClass);
   var classes = columnName + " " + rowClass;
-  console.log(classes);
-  var elem = document.getElementsByClassName(classes)
-  console.log(elem);
-  var red = document.getElementById(evnt.target.id).style.backgroundColor = 'red';
+  //console.log(classes);
+  var jclasses = "." + columnName + "." + rowClass;
 
-  if (evnt.target.classList[2] === "empty") {
+  //var elem = document.getElementsByClassName(classes)
+  //console.log(elem);
+  var $elem = $(jclasses);
+  console.log($elem.hasClass("empty"));
+
+  if ($elem.hasClass("empty")) {
+    $elem.css("background-color", "red");
+    $elem.removeClass("empty").addClass("full");
+    break;
+  }
+  //var red = document.getElementById(evnt.target.id).style.backgroundColor = 'red';
+
+ //$elem.hasClass( "empty" ){
     //put piece here
-    elem.style.backgroundColor = 'red';
+    //alert("Hello");
+    //elem.style.backgroundColor = 'red';
     //change appearance
 
     //update new class or get rid of class
-  }
-  else {
+  //}
+  //else {
 
-  }
+  //}
 }
 
 //as column 1 then increment through through rows
